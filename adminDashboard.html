@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" >
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="apply.js"></script>
+    <title>Administrator Dashboard</title>
+    <style>
+        .mid {
+            text-align: center;
+            margin-bottom: 20px;
+            color: white;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        .shape {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        .box  {
+            width: 30%;
+            padding: 20px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: white;
+            height: 450px;
+            overflow-y: scroll;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .theme2 .box{
+            background-color: #4D6D9A;
+            color: whitesmoke;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+        }
+
+        ul {
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+            padding-left: 10px;
+        }
+        #currentWeekDate {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        color: #394867;
+        margin-bottom: 20px;
+       }
+       .theme2 #currentWeekDate {
+        color: whitesmoke
+       }
+    </style>
+</head>
+
+<body>
+    <header>    
+        <nav>
+            <ul >
+              <li><img src="img/logo.png" alt="logo" width=100vw height=98vw></li>
+            </ul>
+                <ul>
+                <li><a href="index.html" accesskey="h">Home</a></li>
+                <li><a href="ParentDashboard.html" accesskey="p" >Parent Dashboard</a></li>
+                <li><a href="adminDashboard.html" accesskey="a">Administrator Dashboard</a></li>
+                <li><a href="Courses.html" accesskey="c">Courses</a></li>
+                <li><a href="Tutors.html"  accesskey="t">Tutors</a></li>
+            </ul>
+        </nav>
+   
+        <div id="breadcrumbs" >
+            
+            <a href= "index.html"  accesskey="h" > Home </a>
+            <p>></p>
+            <a href= "#" accesskey="a"> Administrator Dashboard</a>
+            <h1 >Administrator Dashboard</h1>
+        </div>
+</header>
+
+    <main>
+        <!-- current week's date -->
+      <div id="currentWeekDate"></div>
+
+        <div class="shape">
+            <div class="box" role="region" aria-label="Registered Kids">
+                <h2>Registered Kids:</h2>
+                <hr>
+                <ul id="registeredKids">
+                  <li>Sara smith</li>
+                  <li>Jake smith</li>
+                  <li>Lukas smith</li>
+                  <li>Ava Sullivan</li>
+                  <li>Maya Bennett</li>
+                  <li>Isabella Reed</li>
+                  <li>Sophia Morgan</li>
+                  <li>Ethan Parker</li>
+                  <li>Lily Ramirez</li>
+                  <li>Harper Bennett</li>
+                  <li>James Foster</li>
+                </ul>
+                <button id="moreButtonKids">More</button>
+                <ul id="moreKids" style="display: none;">
+                  <li>Emily Turner</li>
+                  <li>Henry Mitchell</li>
+                  <li>Ben nett</li>
+                  <li>lon ter</li>
+                  <li>lily lois</li>
+                  <li>rey Mit</li>
+                  <li>Isabella Reed</li>
+                  <li>Sophia Morgan</li>
+                  <li>sara Turner</li>
+                  <li>nia Mitchell</li>
+                  <li>Anderson Bennett</li>
+                  <li>James Thompson</li>
+                  <li>Emily Collins</li>
+                  <li>Lukas andren</li>
+                  <li>ayaa ahmad</li>
+                  <li>Hetty nett</li>
+                  <li>Daniel Foster</li>
+                  <li>Grace Turner</li>
+                  <li>Jhon nerson</li>
+                  <li>harry losn</li>
+                  <li>sara ahmed</li>
+                  <li>abeer rashid</li>
+                  <li>saad adam</li>
+                </ul>
+            </div>
+
+            <div class="box" role="region" aria-label="Courses">
+                <h1>Courses:</h1>
+                <hr>
+                <ul>
+                    <li>
+                        <strong>Computer basics - Mohammed Ahmed</strong>
+                        <ul id="courses">
+                            <li>Sara smith</li>
+                            <li>Jake smith</li>
+                            <li>Lukas smith</li>
+                            <li>Ava Sullivan</li>
+                            <li>Maya Bennett</li>
+                        </ul>
+                        
+                            <button id="moreButtonComputerBasics">More</button>
+                        <ul id="moreKids1" style="display: none;">
+                            <li>Isabella Reed</li>
+                            <li>Sophia Morgan</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Excel - Mohammed Ahmed</strong>
+                        <ul>
+                            <li>Harper Bennett</li>
+                            <li>James Foster</li>
+                            <li>Emily Turner</li>
+                            <li>Henry Mitchell</li>
+                          </ul>
+                        
+                          <button id="moreButtonExcel">More</button>
+                          <ul id="moreKids2" style="display: none;">
+                            <li>Ben nett</li>
+                            <li>lon ter</li>
+                            <li>lily lois</li>
+                            <li>rey Mit</li>
+                          </ul>
+                        
+                    </li>
+                    <li>
+                        <strong>Scratch 1 - Ahmed Khalid </strong>
+                        <ul>
+                            <li>Ben nett</li>
+                            <li>lon ter</li>
+                            <li>lily lois</li>
+                        </ul>
+                    </li>    
+
+                    <li>
+                        <strong>Java - (Nawal Mohammed , Yasmine Nayef)</strong>
+                        <ul>
+                            <li>Sara smith</li>
+                            <li>Jake smith</li>
+                            <li>Lukas smith</li>
+                        </ul>
+                    </li>  
+
+                    <li>
+                        <strong>Python - (Nawal Mohammed , Yasmine Nayef)</strong>
+                        <ul>
+                            <li>Isabella Reed</li>
+                            <li>Sophia Morgan</li>
+                            <li>sara Turner</li>
+                            <li>nia Mitchell</li>
+                        </ul>
+                        <button id="moreButtonPython">More</button>
+                        <ul id="moreKids3" style="display: none;">
+                            <li>rey Mit</li>
+                            <li>harry losn</li>
+                            <li>sara ahmed</li>
+                            <li>abeer rashid</li>
+                            <li>saad adam</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <strong>Scratch 2 - Ahmed Khalid </strong>
+                        <ul>
+                            <li>Anderson Bennett</li>
+                            <li>James Thompson</li>
+                            <li>Emily Collins</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>HTML5 - (Sara Ahmed,Abdullah Saeed)</strong>
+                        <ul>
+                            <li>Lukas andren</li>
+                            <li>ayaa ahmad</li>
+                            <li>Hetty nett</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>CSS - (Sara Ahmed,Abdullah Saeed)</strong>
+                        <ul>
+                            <li>Daniel Foster</li>
+                            <li>Grace Turner</li>
+                            <li>Jhon nerson</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="box" role="region" aria-label="Tutors">
+                <h1>Tutors:</h1>
+                <hr>
+                <ul>
+                    <li>
+                        <a href="schdule1.html" >Mohammed Ahmed</a>
+                        <ul>
+                            <li>Computer basics</li>
+                            <li>Excel</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="schdule2.html" >Nawal Mohammed</a>
+                        <ul>
+                            <li>Java</li>
+                            <li>Python</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="schdule2.html" >Yasmine Nayef</a>
+                        <ul>
+                            <li>Java</li>
+                            <li>Python</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="schdule2.html" > Ahmed Khalid</a>
+                        <ul>
+                            <li>Scratch 1</li>
+                            <li>Scratch 2</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="schdule2.html" >Sara Ahmed</a>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="schdule2.html" >Abdullah Saeed</a>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="section-p1">
+        <div class="col">
+            <h4>Contact</h4>
+            <p><i class="fa fa-envelope"></i><strong>  Email: </strong> codit@gmail.com</p>
+            <p><i class="fa fa-phone fa-flip-horizontal"></i><strong>Phone:</strong> +966 1234 532 </p>
+        </div>
+        <div class="col">
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2023, CodeIt - All rights are reserved</p>
+        </div>
+    </footer>
+
+      <!-- JavaScript code -->
+  <script>
+    //current week's date
+    var currentDate = new Date();
+    var firstDayOfWeek = new Date(currentDate.setDate(currentDate.getDate() - currentDate.getDay()));
+    var formattedDate = firstDayOfWeek.toLocaleDateString('en-US', { weekday: 'long', day: 'numeric', month: 'long' });
+    document.getElementById('currentWeekDate').innerText = 'Current Week: ' + formattedDate;
+
+    // "More" button
+    document.getElementById('moreButtonKids').addEventListener('click', function() {
+      var moreKids = document.getElementById('moreKids');
+      moreKids.style.display = (moreKids.style.display === 'none') ? 'block' : 'none';
+    });
+
+    document.getElementById('moreButtonComputerBasics').addEventListener('click', function() {
+      var moreKids1 = document.getElementById('moreKids1');
+      moreKids1.style.display = (moreKids1.style.display === 'none') ? 'block' : 'none';
+    });
+
+    document.getElementById('moreButtonExcel').addEventListener('click', function() {
+      var moreKids2 = document.getElementById('moreKids2');
+      moreKids2.style.display = (moreKids2.style.display === 'none') ? 'block' : 'none';
+    });    
+    document.getElementById('moreButtonPython').addEventListener('click', function() {
+      var moreKids3 = document.getElementById('moreKids3');
+      moreKids3.style.display = (moreKids3.style.display === 'none') ? 'block' : 'none';
+    });
+  </script>
+</body>
+
+</html>

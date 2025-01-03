@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<script src="apply.js"></script>
+<html lang="en">
+    <head>
+        <title>Register a new kid</title>
+        <meta charset="UTF-8">
+        
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+        <link rel= "stylesheet" href="stylesheet.css">
+        
+        <style>
+          form{
+            width: 55%;
+          }
+
+          legend{
+            font-size: larger;
+            font-weight: bold;
+            color: rgb(22, 22, 101);
+          }
+
+          fieldset{
+            border-radius: 10px;
+            box-shadow: 20px 20px 30px rgb(188, 188, 197);
+            border-color: white;
+            background-color: white;
+            border: 0;
+          }
+
+          ul {
+               list-style-type: none;
+          }
+
+          .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 60vh; 
+          }
+
+          #submit input{
+            background: rgb(22, 22, 101);
+            color: aliceblue;
+            border-radius: 5px;
+            border: 0;
+            padding: 1%;
+          }
+
+          input{
+            border-radius: 5px;
+            border: 0;
+            background-color: rgb(239, 239, 239);
+            margin:1%;
+          }
+
+          #breadcrumbs h1{
+            margin-left: 25%;
+          }
+
+          .theme2 fieldset{
+                color:whitesmoke;
+                background-color: #4D6D9A; 
+              }
+
+          .theme2 form{
+                color:whitesmoke;
+                background-color: #24305E; 
+              }
+        </style>
+        <script src="kidregister.js"></script>
+    </head>
+
+    <body>
+
+      
+      <header>    
+        <nav>
+            <ul >
+                <li><img src="img/logo.png" alt="logo" width=100vw height=98vw></li>
+            </ul>
+                <ul>
+                <li><a href="index.html" accesskey="h">Home</a></li>
+                <li><a href="ParentDashboard.html" accesskey="p" >Parent Dashboard</a></li>
+                <li><a href="adminDashboard.html" accesskey="a">Administrator Dashboard</a></li>
+                <li><a href="Courses.html" accesskey="c">Courses</a></li>
+                <li><a href="Tutors.html" accesskey="t">Tutors</a></li>
+            </ul>
+        </nav>
+   
+
+
+        <div id="breadcrumbs">
+            
+            <a href= "index.html"  > Home </a>
+            <p>></p>
+            <a href= "ParentDashboard.html" > ParentDashboard</a>
+            <p>></p>
+            <a href= "RegisterKid.html" > Register your kid</a>
+            
+            <h1 >Registration Form</h1>
+        </div>
+     </header>
+     
+      <div class="container">
+      <form>
+        <fieldset>
+          <legend>kid information</legend>
+          <ul>
+            <li>
+             <label for="name">Name: <input type="text" id="name" name="name" value=""></label>
+            </li> 
+ 
+            <li>
+             <label for="photo">choose photo: <input type="file" name="photo" id="photo"></label>
+            </li> 
+
+            <li>
+             <label for="date">choose date of birth:  <input type="date" name="date" id="date"></label> 
+            </li> 
+
+            <li>
+             <label for="gender">choose gender: <select name="gender" id="gender">
+             <option value="male">male</option>
+             <option value="female">female</option>
+             </select></label> 
+           </li> 
+
+           <li>
+            <label for="email">Enter your email: <input type="email" id="email" name="email"></label>
+          </li> 
+
+          <li>
+           <label for="phone">Enter phone number: <input type="tel" id="phone" name="phone" pattern="[0-9]{10}"  maxlength="10"></label>
+          </li> 
+          
+          <li id="submit">
+            <input type="submit" value="Submit" onclick="func(); return false;">
+          </li> 
+
+      </ul>
+      </fieldset>
+      </form>
+    </div>
+
+    <footer class="section-p1">
+      <div class="col">
+          <h4>Contact</h4>
+          <p><i class="fa fa-envelope"></i><strong>  Email: </strong> codit@gmail.com</p>
+          <p><i class="fa fa-phone fa-flip-horizontal"></i><strong>Phone:</strong> +966 1234 532 </p>
+          </div>
+          <div class="col">
+          <div class="follow">
+              <h4>Follow Us</h4>
+              <div class="icon">
+                  <a href="https://twitter.com/?lang=en" target="_blank" ><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/" target="_blank" ><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.pinterest.com/" target="_blank" ><i class="fab fa-pinterest-p"></i></a>
+                  <a href="https://www.youtube.com/" target="_blank" ><i class="fab fa-youtube"></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="copyright">
+          <p>© 2023, CodeIt - All rights are reserved</p>
+      </div>
+  </footer>
+
+
+    </body>
+</html>

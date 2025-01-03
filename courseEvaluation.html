@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Course Evaluation</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" >
+<link rel= "stylesheet" href="stylesheet.css">
+<script src="apply.js"></script>
+<style>
+
+	ul {
+        list-style-type: none;
+    }
+  .container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 60vh; 
+    }
+  #submit input{
+     background: #212A3E;
+     color: aliceblue;
+     border-radius: 5px;
+     border: 0;
+     padding: 1%;
+    }
+  #breadcrumbs h1{
+     margin-left: 25%;
+    }
+	form{
+     width: 55%;
+    }
+  legend{
+     font-size: larger;
+     font-weight: bold;
+     color: rgb(22, 22, 101);
+    }
+  fieldset{
+     border-radius: 10px;
+     box-shadow: 20px 20px 30px rgb(188, 188, 197);
+     border-color: white;
+     background-color: white;
+     border: 0;
+    }
+    fieldset li {
+       display: flex;
+       align-items: center;
+       margin: 1.5em 0em;
+    }
+    select{
+       width:auto;
+       text-align: center;
+       background-color: #394867;
+       color:white;
+    }
+    input {
+       border-radius: 5px;
+       border: 0;
+       background-color: #394867;
+       color:white;
+    }
+    label{
+       margin-right: 1%;
+    }
+	
+	.theme2  fieldset{
+  background-color:#4D6D9A;
+
+  color: whitesmoke; 
+}
+    .theme2 legend{
+	color:whitesmoke;
+	}
+
+    </style>
+</head>
+<body>
+<header>
+	
+        <nav>
+            <ul >
+                <li><img src="img/logo.png" alt="logo" width=100vw height=98vw></li>
+            </ul>
+                <ul>
+                <li><a href="index.html" accesskey="h">Home</a></li>
+                <li><a href="ParentDashboard.html" accesskey="p" >Parent Dashboard</a></li>
+                <li><a href="adminDashboard.html" accesskey="a">Administrator Dashboard</a></li>
+                <li><a href="Courses.html" accesskey="c">Courses</a></li>
+                <li><a href="Tutors.html" accesskey="t">Tutors</a></li>
+            </ul>
+        </nav>
+   
+
+        <div id="breadcrumbs">
+            
+            <a href= "index.html"  accesskey="h"> Home </a>
+            <p>></p>
+            <a href= "ParentDashboard.html" accesskey="p"> Parent Dashboard</a> 
+			 <p>></p>
+            <a href="#" accesskey="e">Course Evaluation</a>
+            <h1 style="margin-left:18%;"> Course Evaluation</h1>
+        </div>
+
+	
+	
+
+
+</header>
+
+      <div class="container">
+
+  <form onsubmit="submitForm(); return false;">
+  <fieldset> 
+ <legend>Parent Evaluation</legend>
+ <ul>
+<li>
+    <label for="course">Select a course:</label>
+    <select id="course" name="course" required>
+    <option value="">----</option>
+     <option value="Scratch 1">Scratch 1</option>
+     <option value="Scratch 2">Scratch 2</option>
+     <option value="Excel">Excel</option>
+	   <option value="CSS ">CSS </option>
+     <option value="Java">Java</option>
+     <option value="Python">Python</option>
+     <option value="Computer Basics">Computer Basics</option>
+     <option value="HTML5">HTML5</option>
+    </select>
+</li>
+
+<li>
+ <label for="cAge">Is the course appropriate for the kid's age</label>
+    <select id="cAge" name="cAge" required>
+      <option value="">---</option>
+      <option value="cAge">Yes</option>
+      <option value="cAge">No</option>
+     </Select>
+</li>
+
+<li>
+    <label for="rate">Rate the course (1-5):</label>
+     <input type="number" id="rate" name="rate" min="1" max="5" required>
+</li>
+
+<li>
+   <label for="feedback">Provide feedback:</label>
+   <textarea id="feedback" name="feedback" rows="4" cols="50" ></textarea>
+</li>
+   <li id="submit">
+    <input type="submit" value="Submit">
+</li>
+</ul>
+</fieldset> 
+</form>
+
+</div>
+
+     <footer class="section-p1">
+        <div class="col">
+            <h4>Contact</h4>
+            <p><i class="fa fa-envelope"></i><strong>  Email: </strong> codit@gmail.com</p>
+            <p><i class="fa fa-phone fa-flip-horizontal"></i><strong>Phone:</strong> +966 1234 532 </p>
+            </div>
+            <div class="col">
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <a href="https://twitter.com/?lang=en" target="_blank" ><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" ><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.pinterest.com/" target="_blank" ><i class="fab fa-pinterest-p"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank" ><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2023, CodeIt - All rights are reserved</p>
+        </div>
+
+
+
+  </footer>
+  <script>
+    function submitForm() {
+        var courseName = document.getElementById('course').value;
+        var userRating = document.getElementById('rate').value;
+
+        
+        alert("Thank you for your feedback!\nYour rating for course " + courseName + " is " + userRating);
+    }
+</script>
+</body>
+
+</html>

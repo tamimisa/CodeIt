@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Enrollment</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" >
+    <link rel= "stylesheet" href="stylesheet.css">
+    <script src="apply.js"></script>
+    <style>
+       
+        
+        * {
+            box-sizing: border-box;
+        }
+
+        .content {
+            padding: 40px;
+            border: none;
+        }
+
+        .course-selection {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .course-box {
+    flex: 0 0 calc(33.33% - 20px);
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.course-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;  
+}
+.course-box img {
+    margin-top: 10px;  
+}
+
+
+        .inline-dropdown {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .inline-dropdown label {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        select,
+        button {
+            padding: 10px;
+            font-size: 1em;
+            width: 200px;
+        }
+
+        .tutor-prerequisite-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .course-selection+button {
+            margin-top: 20px;
+            width: 20%;
+            clear: both;
+            display: block;
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        .courses-container {
+            max-height: 400px;
+            
+            overflow-y: scroll;
+            
+            border: 1px solid #ccc;
+           
+            padding: 10px;
+        }
+        button[type="submit"] {
+    background: rgb(22, 22, 101);
+    color: aliceblue;
+    border-radius: 5px;
+    border: 0;
+    padding: 1%;
+    display: block;
+    margin-left: auto;
+    margin-top: 20px;
+}
+
+input {
+    border-radius: 5px;
+    border: 0;
+    background-color: rgb(239, 239, 239);
+}
+#breadcrumbs h1{
+ margin-left: 25%;
+}
+           fieldset{
+            border-radius: 10px;
+            box-shadow: 20px 20px 30px rgb(188, 188, 197);
+            border-color: white;
+            background-color: white;
+            border: 0;
+          }
+          
+          .theme2 fieldset{
+            color:whitesmoke;
+                background-color: #24305E;
+              }
+
+          .theme2 form{
+                color:whitesmoke;
+                background-color: #24305E; 
+              }
+              .theme2 .course-box{
+                color:whitesmoke;
+                background-color: #4D6D9A; ; 
+              }
+              
+        
+
+    </style>
+</head>
+
+
+<body>
+    <header>    
+        <nav>
+            <ul>
+                <li><img src="img/logo.png" alt="logo" width=100vw height=98vw></li>
+            </ul>
+                <ul>
+                <li><a href="index.html" target="_self" accesskey="h">Home</a></li>
+                <li><a href="ParentDashboard.html" target="_self" accesskey="p" >Parent Dashboard</a></li>
+                <li><a href="adminDashboard.html" target="_self" accesskey="a">Administrator Dashboard</a></li>
+                <li><a href="Courses.html" target="_self" accesskey="c">Courses</a></li>
+                <li><a href="Tutors.html" target="_self" accesskey="t">Tutors</a></li>
+            </ul>
+        </nav>
+    
+    
+    
+        <div id="breadcrumbs">
+            
+            <a href= "index.html" target="_self" > Home </a>
+            <p>></p>
+            <a href= "ParentDashboard.html" target="_self"> Parent Dashboard</a>
+            <p>></p>
+            <a href= "CourseEnrolment.html" target="_self"> Course Enrollment</a>
+            
+            <h1 >Course Enrollment</h1>
+        </div>
+    </header>
+    
+    <form>
+        <fieldset>
+    <div class="content">
+        <div class="inline-dropdown">
+            <label for="kidsName">Kid's name</label>
+           <select id="kidsName" name="kidsName">
+                <option value="">Select a child</option>
+                <option value="rima">Rima smith</option>
+                <option value="sara">Sara smith</option>
+                <option value="jake">Jake smith</option>
+                <option value="lukas">Lukas smith</option>
+            </select>
+        </div>
+        <div class="tutor-prerequisite-group">
+            <div class="inline-dropdown">
+                <label for="filter">Filter the courses</label>
+                <select id="filter" name="filter">
+                    <optgroup label="Tutors">
+                    <option value="tutor1">Ahmed Khalid</option>
+                    <option value="tutor2">Mohammed Ahmed</option>
+                    <option value="tutor3">Sara Ahmed</option>
+                    <option value="tutor4">Nawal Mohammed</option>
+                    <option value="tutor5">Yasmine Nayef</option>
+                    <option value="tutor6">Abdullah Saeed</option>
+                    </optgroup>
+                </select>
+                
+            </div>
+            <div class="inline-dropdown">
+                <select id="prerequisite" name="prerequisite">
+                    <optgroup label="Prerequisite">
+                        <option value="None">None</option> 
+                        <option value="HTML5">HTML5</option>
+                        <option value="Scratch 1">Scratch 1</option>
+                        <option value="Computer basics">Computer basics</option>
+                        <option value="python">python</option>
+                        <option value="Excel">Excel</option>
+                </optgroup>
+                </select>
+            </div>
+        </div>
+
+        <p>The Courses</p>
+        <div class="courses-container">
+            <div class="course-selection">
+                <div class="course-box">
+                    <div class="course-info">
+                        <span>Scratch 1</span> 
+                        <label><input type="checkbox" name="course" value="Scratch 1"></label>
+                        </div>
+                    <img src="img/R.png" alt="scratch logo" style="max-width: 60%;">
+                </div>
+                <div class="course-box">
+                    <div class="course-info">
+                    <span>Excel</span>
+                    <label><input type="checkbox" name="course" value="Excel"></label></div>
+                    <img src="img/excel.png" alt="Excel logo" style="max-width: 50%;">
+                </div>
+                <div class="course-box">
+                    <div class="course-info">
+                   <span>Scratch 2</span>
+                    <label><input type="checkbox" name="course" value="Scratch 2"></label></div>
+                    <img src="img/R.png" alt="scratch logo" style="max-width: 60%;">
+                </div>
+                <div class="course-box">
+                    <div class="course-info">
+                    <span>CSS</span>
+                   <label> <input type="checkbox" name="course" value="CSS"></label></div>
+                    <img src="img/css1.png" alt="CSS logo" style="max-width: 70%;">
+                </div>
+                <div class="course-box">
+                    <div class="course-info">
+                   <span> Java</span>
+                    <label><input type="checkbox" name="course" value="Java"></label></div>
+                    <img src="img/Java_logo_icon.png" alt="Java logo" style="max-width: 70%; ">
+                </div>
+                <div class="course-box">
+                    <div class="course-info">
+                   <span> python</span>
+                    <label><input type="checkbox" name="course" value="python"></label></div>
+                    <img src="img/4846343.png" alt="python logo" style="max-width: 40%;">
+                </div>
+                <div class="course-box">
+                    <div class="course-info">
+                    <span>Computer basics</span>
+                    <label><input type="checkbox" name="course" value="Computer basics"></label></div>
+                    <img src="img/pc.png" alt="cpu image" style="max-width: 45%;">
+                </div>
+                <div class="course-box">
+                    <div class="course-info">
+                    <span>HTML5</span>
+                   <label><input type="checkbox" name="course" value="HTML5"></label></div>
+                    <img src="img/html.png" alt="HTML5 logo" style="max-width: 30%;">
+                </div>
+                <div class="course-box">
+                    <div class="course-info">
+                    <span>Word</span>
+                   <label><input type="checkbox" name="course" value="Word"></label></div>
+                    <img src="img/word.png" alt="word logo" style="max-width: 50%;">
+                </div>
+            </div>
+        </div>
+
+        <button type="submit">Submit</button>
+
+    </div>
+    </fieldset>
+    </form>
+    <script >
+  
+document.addEventListener('DOMContentLoaded', function() {
+    
+  var tutorSelect = document.getElementById('filter');
+  var prerequisiteSelect = document.getElementById('prerequisite');
+  var coursesContainer = document.querySelector('.courses-container');
+  var kidsNameSelect = document.getElementById('kidsName');
+
+    // Retrieve the children's names from local storage
+    var kidsNames = JSON.parse(localStorage.getItem('childNames')) || [];
+
+    // Clear the select before adding new options to prevent duplicates
+    kidsNameSelect.innerHTML = '<option value="all">All Children</option>';
+
+    // Create a Set to track the names already added to the select
+    var namesSet = new Set(['all']); // Include 'all' to prevent it from being added again
+
+    // Add options to the select, checking for duplicates
+    kidsNames.forEach(function(name) {
+        if (!namesSet.has(name)) {
+            kidsNameSelect.add(new Option(name, name));
+            namesSet.add(name); 
+        }
+    });
+  
+  var courses = [
+  { name: "Scratch 1", tutor: "Ahmed Khalid", prerequisite: "None" },
+{ name: "Excel", tutor: "Mohammed Ahmed", prerequisite: "Computer basics" },
+{ name: "Scratch 2", tutor: "Ahmed Khalid", prerequisite: "Scratch 1" },
+{ name: "CSS", tutor: "Sara Ahmed", prerequisite: "HTML5" },
+{ name: "Java", tutor: "Nawal Mohammed", prerequisite: "python" },
+{ name: "python", tutor: "Yasmine Nayef", prerequisite: "Computer basics" },
+{ name: "Computer basics", tutor: "Mohammed Ahmed", prerequisite: "None" },
+{ name: "HTML5", tutor: "Abdullah Saeed", prerequisite: "None" }, 
+{ name: "Word", tutor: "Yasmine Nayef", prerequisite: "Excel" }
+  ];
+
+  
+  populateFilterOptions();
+
+
+tutorSelect.addEventListener('change', filterCourses);
+  prerequisiteSelect.addEventListener('change', filterCourses);
+
+  
+  document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+
+    var selectedChild = kidsNameSelect.options[kidsNameSelect.selectedIndex].text;
+    var selectedCourses = Array.from(document.querySelectorAll('.course-selection input[type="checkbox"]:checked')).map(function(checkbox) {
+      return checkbox.value;
+    });
+
+    if (selectedChild === 'All Children' || !selectedChild) {
+      alert('Please select a specific child.');
+      return;
+    }
+    if (selectedCourses.length === 0) {
+      alert('Please select at least one course.');
+      return;
+    }
+
+    var previousInfo = document.getElementById('submission-info');
+    if (previousInfo) {
+      previousInfo.remove();
+    }
+
+    displaySubmissionInfo(selectedChild, selectedCourses);
+    this.reset();
+  });
+  
+  function populateFilterOptions() {
+     
+     tutorSelect.options.length = 0;
+    prerequisiteSelect.options.length = 0;
+
+    
+    tutorSelect.add(new Option('All Tutors', 'all'));
+    prerequisiteSelect.add(new Option('All Prerequisites', 'all'));
+
+    // Populate tutors and prerequisites
+    var tutors = new Set();
+    var prerequisites = new Set();
+
+    courses.forEach(function(course) {
+      tutors.add(course.tutor);
+      prerequisites.add(course.prerequisite);
+    });
+
+    
+    prerequisites.delete("None");
+
+    tutors.forEach(function(tutor) {
+      tutorSelect.add(new Option(tutor, tutor));
+    });
+
+    prerequisites.forEach(function(prerequisite) {
+      prerequisiteSelect.add(new Option(prerequisite, prerequisite));
+    });
+  }
+  
+  function filterCourses() {
+    var selectedTutor = tutorSelect.value;
+    var selectedPrerequisite = prerequisiteSelect.value;
+    
+    
+    var courseSelectionDiv = document.querySelector('.course-selection');
+    courseSelectionDiv.innerHTML = ''; 
+
+    var filteredCourses = courses.filter(function(course) {
+        return (selectedTutor === 'all' || course.tutor === selectedTutor) &&
+       (selectedPrerequisite === 'all' || course.prerequisite === selectedPrerequisite);
+    });
+
+    filteredCourses.forEach(function(course) {
+        
+        var courseDiv = document.createElement('div');
+        courseDiv.className = 'course-box';
+
+        var courseInfoDiv = document.createElement('div');
+        courseInfoDiv.className = 'course-info';
+
+        var courseNameSpan = document.createElement('span');
+        courseNameSpan.textContent = course.name;
+
+        var label = document.createElement('label');
+        var input = document.createElement('input');
+        input.type = 'checkbox';
+        input.name = course.name; 
+        input.value = course.name;
+        
+        label.appendChild(input);
+        courseInfoDiv.appendChild(courseNameSpan);
+        courseInfoDiv.appendChild(label);
+
+        // Create image element
+        var img = document.createElement('img');
+        img.src = getImagePath(course.name); 
+        img.alt = course.name + " logo";
+        img.style.maxWidth = "60%";
+
+        courseDiv.appendChild(courseInfoDiv);
+        courseDiv.appendChild(img);
+
+        
+        courseSelectionDiv.appendChild(courseDiv);
+    });
+}
+
+
+function getImagePath(courseName) {
+    var imagePaths = {
+        'Scratch 1': 'img/R.png',
+        'Excel': 'img/excel.png',
+        'Scratch 2': 'img/R.png',
+        'CSS': 'img/css1.png',
+        'Java': 'img/Java_logo_icon.png',
+        'python': 'img/4846343.png',
+        'Computer basics': 'img/pc.png',
+        'HTML5': 'img/html.png',
+        'Word': 'img/word.png',
+        
+    };
+
+    
+    return imagePaths[courseName] || 'path_to_default_image.png';
+}
+function displaySubmissionInfo(child, selectedCourses) {
+    
+    var previousInfo = document.getElementById('submission-info');
+    if (previousInfo) {
+        previousInfo.remove();
+    }
+
+    
+    var infoContainer = document.createElement('div');
+    infoContainer.id = 'submission-info';
+    var htmlContent = `<strong>Enrollment for:</strong> ${child}<br><strong>Courses:</strong><ul>`;
+    selectedCourses.forEach(function(courseName) {
+        var courseDetail = courses.find(function(course) {
+            return course.name === courseName;
+        });
+        if (courseDetail) {
+            htmlContent += `<li>${courseDetail.name} - Tutor: ${courseDetail.tutor}</li>`;
+        }
+    });
+    htmlContent += '</ul>';
+    infoContainer.innerHTML = htmlContent;
+
+    
+    document.querySelector('.content').appendChild(infoContainer);
+}
+});
+
+    
+    </script>
+    <footer class="section-p1">
+        <div class="col">
+            <h4>Contact</h4>
+            <p><i class="fa fa-envelope"></i><strong>  Email: </strong> codit@gmail.com</p>
+            <p><i class="fa fa-phone fa-flip-horizontal"></i><strong>Phone:</strong> +966 1234 532 </p>
+            </div>
+            <div class="col">
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <a href="https://twitter.com/?lang=en" target="_blank" ><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" ><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.pinterest.com/" target="_blank" ><i class="fab fa-pinterest-p"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank" ><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2023, CodeIt - All rights are reserved</p>
+        </div>
+    </footer>
+    
+
+</body>
+
+</html>

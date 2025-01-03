@@ -1,0 +1,585 @@
+<!DOCTYPE html >
+
+<html lang="en">
+
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home page</title>
+
+
+
+
+
+<Style>
+/* Theme 1 */
+.theme1 {
+background-color:#F1F6F9;
+color: #394867;}
+/* Theme 2 */
+.theme2 {
+background-color:#24305E;
+color:white;
+
+
+
+}
+.theme2 .course {
+background-color:#4D6D9A;
+color: whitesmoke;
+}
+
+
+.theme2 .review {
+background-color: #4D6D9A;
+color: whitesmoke;
+}
+
+
+
+
+
+/* Styles for laptop screens */
+@media (min-width: 1024px)
+{ 
+
+.pc, .rev {width:80%;
+padding:0;
+}
+
+
+
+}
+
+
+
+/* Styles for phone screens */
+@media (max-width: 767px)
+{.pc , .rev{width:90%;}
+.review{width:27%;}
+footer{
+width:50%;
+}
+
+header , .vision {
+width:100%;
+}
+}
+
+
+
+
+
+
+img { max-width: 100%; height: auto; }
+
+
+
+
+
+.course{
+margin-bottom: 90%;
+margin-left:5%;
+margin-right:5%;
+}
+
+
+.course-container {
+display: flex;
+justify-content: space-between;
+overflow: scroll;
+flex-wrap:wrap;
+
+
+}
+.course-container::-webkit-scrollbar {
+display: none;
+}
+.pc{
+margin-bottom: 20px;
+margin-left:5%;
+margin-right:5%;
+}
+.rev{
+margin-bottom: 20px;
+margin-left:5%;
+margin-right:5%;
+}
+.vision{
+display: flex;
+
+flex-direction: column;
+
+height: 300px;
+
+background-color:#F1F6F9;
+color:white;
+font-size: 110%;
+background:url(img/home.jpg) center;
+background-size:100%;
+text-align:right;
+}
+/*
+.vision p {
+position: absolute;
+left: 65%;
+bottom: 53%;
+
+}
+
+.vision h1 {
+position: absolute;
+left: 65%;
+bottom: 65%;
+}
+*/
+.course {
+
+display: flex;
+
+flex-direction: column;
+
+align-items: center;
+
+margin-bottom: 20px;
+margin-right:2%;
+padding: 10px;
+
+
+min-width: 20%;
+max-width:20%;
+height:30vw;
+
+
+border: 1px solid #ccc;
+background-color:#212A3E;
+color:white;
+font-size: 110%;
+color:rgb(0, 0, 0);
+background-clip: padding-box;
+background-color: whitesmoke;
+box-shadow: 10px 10px 10px rgb(188, 188, 197);
+border: 1px solid rgb(211, 211, 211);
+border-radius: 25px;
+line-height: 1.5em;
+flex-wrap:wrap;
+
+width:90%;
+}
+
+
+
+.course img {
+
+width: 100px;
+
+height: 100px;
+
+}
+
+.review-container {
+
+display: flex;
+
+
+justify-content: space-between;
+
+}
+
+
+.course {
+
+display: flex;
+
+flex-direction: column;
+
+align-items: center;
+
+margin-bottom: 20px;
+
+padding: 10px;
+
+border: 1px solid #ccc;
+background-color:#212A3E;
+color:white;
+
+font-size: 110%;
+color:rgb(0, 0, 0);
+background-clip: padding-box;
+background-color: whitesmoke;
+box-shadow: 10px 10px 10px rgb(188, 188, 197);
+border: 1px solid rgb(211, 211, 211);
+border-radius: 25px;
+line-height: 1.5em;
+margin-bottom: 20px;
+margin-right:2%;
+padding: 10px;
+
+}
+.review {
+
+display: flex;
+
+flex-direction: column;
+
+align-items: center;
+
+margin-bottom: 20px;
+
+padding: 10px;
+
+border: 1px solid #ccc;
+background-color:#212A3E;
+color:white;
+
+font-size: 110%;
+color:rgb(0, 0, 0);
+background-clip: padding-box;
+background-color: whitesmoke;
+box-shadow: 10px 10px 10px rgb(188, 188, 197);
+border: 1px solid rgb(211, 211, 211);
+border-radius: 25px;
+line-height: 1.5em;
+margin-bottom: 20px;
+margin-right:2%;
+padding: 10px;
+
+}
+
+
+.Course p{ background-color:#212A3E;
+color:white;
+
+}
+.Course h3{ background-color:#212A3E;
+color:white;
+
+}
+
+
+.review img {
+
+width: 100px;
+
+height: 100px;
+
+}
+
+h2{color:#394867;
+text-indent:5%;
+}
+.review p , .course p{color:#394867;}
+.review h3 , .course h3{color:#394867;}
+.theme2 h2 {
+color: whitesmoke;
+}
+.theme2 .course p, .theme2 .course h3{
+color: whitesmoke;
+}
+
+.theme2 .review p, .theme2 .review h3{
+color: whitesmoke;
+}
+
+
+
+
+
+
+
+/* Styles for smaller screens */
+@media (max-width: 767px) {
+/* Style the mobile menu icon */
+.navbar .icon { display: none; }
+/* Media queries for small screens */
+@media screen and (max-width: 400px)
+{ .navbar a:not(:last-child) { display: none; }
+.navbar a.icon { float: right; display: block; }
+footer{
+width:58%;
+
+}
+.course {
+height: auto;
+max-width: 100%;
+margin-bottom: 10px;
+}
+
+/* Update course text styles for smaller screens */
+.course h3, .course p {
+font-size: 100%;
+margin: 5px;
+}
+nav{display:flex;
+flex-wrap:wrap;
+}
+}
+.theme{
+background-color:rgb(87 , 87 , 187);
+color :whitesmoke;
+
+}}
+
+#logo img {
+  width: 80%; 
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+
+.course {
+  height: 280%;
+  
+}
+.course {
+  max-width: 35%; 
+}
+.vision h1 , .vision p{
+display:grid;
+}
+
+
+</style>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" >
+<link rel= "stylesheet" href="stylesheet.css">
+
+
+<script>
+function toggleTheme(){
+const body = document. body;
+body.classList.toggle('theme1');
+body.classList.toggle(' theme2' ) ;
+const currentTheme = body.classList.contains('theme1' ) ?'theme1' :'theme2';
+locaLStorage.setItem('selectedTheme', currentTheme);
+}
+function applySavedTheme() {
+const savedTheme = localStorage.getItem('selectedTheme');
+if (savedTheme) {
+document.body.classList.add(savedTheme);
+}
+}
+window.addEventListener('DOMContentLoaded' , function(){
+applySavedTheme();
+if(window.location.pathname.includes('index.html')){
+applySavedTheme();
+}
+});
+</script>
+
+
+</head>
+<body>
+
+
+<header>
+<nav>
+
+<ul ><li><img src="img/logo.png" alt="logo" width="100" height="90"></li></ul>
+<ul>
+<li><a href="index.html" accesskey="h">Home</a></li>
+<li><a href="ParentDashboard.html" accesskey="p" >Parent Dashboard</a></li>
+<li><a href="adminDashboard.html" accesskey="a">Administrator Dashboard</a></li>
+<li><a href="Courses.html" accesskey="c">Courses</a></li>
+<li><a href="Tutors.html" accesskey="t">Tutors</a></li>
+</ul>
+<button id="customize-button" onclick="theme2()">Change the mode</button>
+
+</nav>
+
+</header>
+
+
+
+<div class="vision">
+<h1 >Welcome to CodeIt</h1>
+<p>
+A vibrant and interactive online platform designed to teach children<br>
+the foundations of coding, in a fun and engaging way.<br>
+Our vision is to empower young minds and equip them with the skills <br>
+needed to thrive in the digital age.</p>
+</div>
+
+<div class="pc" >
+<h2>Popular courses</h2>
+<div class="course-container" >
+
+<div class="course" >
+
+<img src="img/course1.png" alt="Scratch">
+
+<h3 style="font-size:150%;text-align:center;">Scratch 1 </h3>
+
+
+<p style="font-size:120%;text-align:center;">Rate:4.5 <br>an introduction that explains the basics of scratch.</p>
+
+</div>
+
+
+
+<div class="course">
+
+<img src="img/course1.png" alt="Scratch">
+
+<h3 style="font-size:150%;text-align:center;">Scratch 2</h3>
+
+
+<p style="font-size:120%;text-align:center;">Rate: 4.8 <br>coding some exciting games using scratch.</p>
+
+</div>
+
+
+
+<div class="course">
+
+<img src="img/course3.png" alt="Excel">
+
+<h3 style="font-size:150%;text-align:center;">Excel</h3>
+<p style="font-size:120%;text-align:center;">Rate: 4.2<br>explain Excel and how to use it in a joyful way.</p>
+
+</div>
+
+<div class="course">
+
+<img src="img/course4.png" alt="HTML">
+
+<h3 style="font-size:150%;text-align:center;">HTML </h3>
+<p style="font-size:120%;text-align:center;">Rate: 4.6<br>explain how to write a code using HTML.</p>
+
+</div>
+<div class="course">
+
+<img src="img/course5.png" alt="CSS">
+
+<h3 style="font-size:150%;text-align:center;">CSS</h3>
+<p style="font-size:120%;text-align:center;">Rate: 4 <br>explain how to write a style sheet for designing an HTML code.</p>
+
+</div>
+<div class="course">
+
+<img src="img/course6.png" alt="java">
+
+<h3 style="font-size:150%;text-align:center;">java</h3>
+<p style="font-size:120%;text-align:center;">Rate: 4.1<br>an interesting way to design a robot.</p>
+
+</div>
+
+</div>
+
+
+
+
+</div>
+
+<div class="rev">
+<h2>Reviews</h2>
+<div class ="review-container">
+<div class="review">
+
+<img src="img/ri1.png" alt="mother">
+<h3>Ana</h3>
+<p style="font-size:120%;text-align:center;">Rating: 4.5</p>
+
+<p style="font-size:120%;text-align:center;"><strong>Feedback:</strong>I used the Scratch one, good for providing a solid foundation<br> for children to develop coding skills.</p>
+
+</div>
+
+
+
+<div class="review">
+
+<img src="img/ri2.png" alt="farher">
+<h3>Jake</h3>
+<p style="font-size:120%;text-align:center;">Rating: 4.8</p>
+
+<p style="font-size:120%;text-align:center;"><strong>Feedback:</strong>i took a scratch1 for my kid, it was a joyful way for learning how to write a<br> game codes, i do recommend it for your kids .</p>
+
+</div>
+
+
+
+<div class="review">
+
+<img src="img/ri3.png" alt="mother">
+<h3>Sara</h3>
+
+<p style="font-size:120%;text-align:center;">Rating: 4.2</p>
+
+<p style="font-size:120%;text-align:center;"><strong>Feedback:</strong>i took the Excel Course for my daughter,it was good for the basics of excel only, i think <br>it need to get into details more.</p>
+
+</div>
+
+</div>
+</div>
+
+<footer class="section-p1">
+<div class="col">
+<h4>Contact</h4>
+<p><i class="fa fa-envelope"></i><strong> Email: </strong> codit@gmail.com</p>
+<p><i class="fa fa-phone fa-flip-horizontal"></i><strong>Phone:</strong> +966 1234 532 </p>
+</div>
+<div class="col">
+<div class="follow">
+<h4>Follow Us</h4>
+<div class="icon">
+<a href="https://twitter.com/?lang=en" target="_blank" ><i class="fab fa-twitter"></i></a>
+<a href="https://www.instagram.com/" target="_blank" ><i class="fab fa-instagram"></i></a>
+<a href="https://www.pinterest.com/" target="_blank" ><i class="fab fa-pinterest-p"></i></a>
+<a href="https://www.youtube.com/" target="_blank" ><i class="fab fa-youtube"></i></a>
+</div>
+</div>
+</div>
+<div class="copyright">
+<p>©️ 2023, CodeIt - All rights are reserved</p>
+</div>
+
+
+
+</footer>
+
+
+<script>
+// Function to toggle between themes
+function toggleTheme() {
+var body = document.body;
+body.classList.toggle('theme1');
+body.classList.toggle('theme2');
+
+// Save the current theme to localStorage
+const currentTheme = body.classList.contains('theme1') ? 'theme1' : 'theme2';
+localStorage.setItem('selectedTheme', currentTheme);
+}
+
+// Apply saved theme on page load
+function applySavedTheme() {
+const savedTheme = localStorage.getItem('selectedTheme');
+if (savedTheme) {
+document.body.classList.add(savedTheme);
+}
+}
+
+window.addEventListener('DOMContentLoaded', function() {
+applySavedTheme();
+});
+
+// Add event listener to the customize button
+var customizeButton = document.getElementById('customize-button');
+customizeButton.addEventListener('click', toggleTheme);
+
+// Apply theme on other pages
+if (window.location.pathname !== '/home.html') {
+applySavedTheme();
+}
+
+</script>
+<script>
+function theme2() {
+}
+</script>
+
+</body>
+
+</html>
+

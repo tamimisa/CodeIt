@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<script src="apply.js"></script>
+<html lang="en">
+
+    <head>
+        <title> Parent Dashboard </title>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+        <link rel= "stylesheet" href="stylesheet.css">
+
+        <style>
+        main{
+            width: 70%;
+            margin-left: 30%;
+            margin-top: 4%;
+            }
+
+        .container{
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         padding-top: 20px; 
+         flex-wrap: wrap;    
+        }
+        
+        .top{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .bottom{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .kids{
+            width:23%;
+            min-width: 250px;
+            padding: 10px 12px;
+            border: 1px solid rgb(211, 211, 211);
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 10px 10px 10px rgb(188, 188, 197);
+            margin: 15px 0;
+            }
+
+          .kids h4{
+            color:rgb(0, 5, 26);
+            font-family: 'Times New Roman', Times, serif;
+          }
+        
+            .kids img{
+                width: 100%;
+                border-radius: 20px;
+            }
+
+            aside{
+             float: left;
+              width:25%;
+             height: auto;
+               }
+
+              aside ul {
+               list-style-type: none;
+                display: flex;
+                background-color: #212A3E;
+                flex-direction: column;
+                margin-left: 10%;
+                margin-top: 20%;
+             }
+
+             aside li
+              {
+               color: white;
+               display: flex;
+               padding: 10%;
+               text-align: left;
+              }
+  
+              aside li a
+                {
+                display: block;
+              color: white;
+              text-align: left;
+              text-decoration:none;
+                font-size: 150%;
+              }
+  
+                  
+             aside a{
+                color:#4b5a9c;
+                text-decoration: underline;
+                }
+
+               aside a:hover {
+                background-color: #F1F6F9;
+                color: #394867;
+              }
+
+              .theme2 .kids{
+                color:whitesmoke;
+                background-color: #4D6D9A; 
+              }
+
+              .theme2 .container{
+                color:whitesmoke;
+                background-color: #24305E; 
+              }
+        </style>
+      <script src="kidregister.js"></script>
+    </head>
+
+    <body>
+
+      <header>    
+        <nav>
+            <ul >
+                <li><img src="img/logo.png" alt="logo" width=100vw height=98vw></li>
+            </ul>
+                <ul>
+                <li><a href="index.html" accesskey="h">Home</a></li>
+                <li><a href="ParentDashboard.html" accesskey="p" >Parent Dashboard</a></li>
+                <li><a href="adminDashboard.html" accesskey="a">Administrator Dashboard</a></li>
+                <li><a href="Courses.html" accesskey="c">Courses</a></li>
+                <li><a href="Tutors.html" accesskey="t">Tutors</a></li>
+            </ul>
+        </nav>
+   
+
+
+        <div id="breadcrumbs">
+            
+            <a href= "index.html" > Home </a>
+            <p>></p>
+            <a href= "ParentDashboard.html"> ParentDashboard</a>
+            
+            <h1 >Registered Kids</h1>
+        </div>
+</header>
+
+     <aside>
+        <ul>
+            <li><a href="RegisterKid.html">Register your Kid</a></li>
+            <li><a href="CourseEnrolment.html">course enrollment</a></li>
+            <li><a href="courseEvaluation.html">course evaluation</a></li>
+    </ul>
+    </aside>
+    
+    <main>
+      <section class="container">
+        <div class="top">
+          <div class="kids">
+            <div class="image">
+              <img src="img/profile.png" alt="kid">
+              <div class="description">
+                <h4>Rima Smith</h4>
+              </div>
+            </div>
+          </div>
+    
+          <div class="kids">
+            <div class="image">
+              <img src="img/profile.png" alt="kid">
+              <div class="description">
+                <h4>Lukas Smith</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="bottom">
+          <div class="kids">
+            <div class="image">
+              <img class="images" src="img/profile.png" alt="kid">
+              <div class="description">
+                <h4>Sara Smith</h4>
+              </div>
+            </div>
+          </div>
+    
+          <div class="kids">
+            <div class="image">
+              <img src="img/profile.png" alt="kid">
+              <div class="description">
+                <h4>Jake Smith</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <div class="top">
+          <div class="kids">
+            <div class="image">
+              <img src="img/profile.png" alt="kid">
+              <div class="description">
+                <h4>Rima Smith</h4>
+              </div>
+            </div>
+          </div>
+    
+          <div class="kids">
+            <div class="image">
+              <img src="img/profile.png" alt="kid">
+              <div class="description">
+                <h4>Lukas Smith</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="bottom">
+          <div class="kids">
+            <div class="image">
+              <img class="images" src="img/profile.png" alt="kid">
+              <div class="description">
+                <h4>Sara Smith</h4>
+              </div>
+            </div>
+          </div>
+    
+          <div class="kids">
+            <div class="image">
+              <img src="img/profile.png" alt="kid">
+              <div class="description">
+                <h4>Jake Smith</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    
+      <script>
+        // Check if local storage has parent's children
+
+        // Check if local storage has parent's children
+        if (localStorage.getItem('childNames') === null) {
+          // Local storage is empty, save 2 children's names and images
+          const children = ['Rima Smith', 'Lukas Smith'];
+          const images = ['img/girl1.png', 'img/boy1.png'];
+          localStorage.setItem('childNames', JSON.stringify(children));
+          localStorage.setItem('childImages', JSON.stringify(images));
+           // Display children in the dashboard
+           const kidsElements = document.querySelectorAll('.kids');
+          kidsElements.forEach((element, index) => {
+            if (index < children.length) {
+              const nameElement = element.querySelector('.description h4');
+              nameElement.textContent = children[index];
+      
+              const imageElement = element.querySelector('.image img');
+              imageElement.src = images[index];
+      
+              element.style.display = 'block';
+            } else {
+              element.style.display = 'none';
+            }
+          });
+        } else {
+          // Local storage has children, retrieve and display them
+          const children = JSON.parse(localStorage.getItem('childNames'));
+          const images = JSON.parse(localStorage.getItem('childImages'));
+      
+          // Display children in the dashboard
+          const kidsElements = document.querySelectorAll('.kids');
+          kidsElements.forEach((element, index) => {
+            if (index < children.length) {
+              const nameElement = element.querySelector('.description h4');
+              nameElement.textContent = children[index];
+      
+              const imageElement = element.querySelector('.image img');
+              imageElement.src = images[index];
+      
+              element.style.display = 'block';
+            } else {
+              element.style.display = 'none';
+            }
+          });
+        }
+      
+      </script>
+
+    </main>
+
+     <footer class="section-p1">
+        <div class="col">
+            <h4>Contact</h4>
+            <p><i class="fa fa-envelope"></i><strong>  Email: </strong> codit@gmail.com</p>
+            <p><i class="fa fa-phone fa-flip-horizontal"></i><strong>Phone:</strong> +966 1234 532 </p>
+            </div>
+            <div class="col">
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <a href="https://twitter.com/?lang=en" target="_blank" ><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" ><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.pinterest.com/" target="_blank" ><i class="fab fa-pinterest-p"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank" ><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2023, CodeIt - All rights are reserved</p>
+        </div>
+    </footer>
+
+    </body>
+    
+</html>

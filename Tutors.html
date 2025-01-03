@@ -1,0 +1,282 @@
+<!DOCTYPE html >
+<html lang="en">
+    <script src="apply.js"></script>
+
+<head>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" >
+<link rel= "stylesheet" href="stylesheet.css">
+<script src="apply.js"></script>
+<meta charset="UTF-8">
+<style>
+#scrollMenu{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+     overflow: auto;
+     white-space: nowrap;  
+}
+main{
+    min-height: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.box{
+    white-space: normal;
+    min-width: 20%;
+    max-width:20%;
+    height:30vw;
+    padding:15px;
+    overflow: scroll;
+    margin:0.5vw;
+    display: inline-block;
+    box-sizing: border-box;
+    color:rgb(0, 0, 0);
+    background-clip: padding-box;
+    background-color: whitesmoke;
+    box-shadow: 10px 10px 10px rgb(188, 188, 197);
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 25px;
+    line-height: 1.5em;
+}
+.box img{
+    width: 100%;
+    border-radius: 20px;
+}
+.box:hover{
+    min-width: 25%;
+    max-width:25%;
+    height:32vw; 
+}
+.profile{
+    display:flex;
+    justify-content: center;  
+}
+dt{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+#scrollMenu::-webkit-scrollbar{
+    display: none;
+}
+.box::-webkit-scrollbar{
+    display: none;
+}
+#sort{
+    margin-left: 5%;
+   font-size:1.2em;
+    color:#212A3E;
+    display:flex;
+    align-items: center;
+}
+#sort select{
+    margin-left: 1%;
+    background-color: #394867;
+    color:white;
+    text-align: center;
+    width:4.5%;  
+}
+ #sortableList  li{
+     display: inline;
+} 
+
+.theme2 #sort {
+  color: whitesmoke; 
+}
+.theme2 .box {
+  background-color:#4D6D9A;
+
+  color: whitesmoke; 
+}
+</style>
+<title>Tutors</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul >
+                <li><img src="img/logo.png" alt="logo"  width="100vw" height="98vw"></li>
+            </ul>
+                <ul>
+                <li><a href="index.html" accesskey="h">Home</a></li>
+                <li><a href="ParentDashboard.html" accesskey="p" >Parent Dashboard</a></li>
+                <li><a href="adminDashboard.html" accesskey="a">Administrator Dashboard</a></li>
+                <li><a href="Courses.html" accesskey="c">Courses</a></li>
+                <li><a href="Tutors.html" accesskey="t">Tutors</a></li>
+            </ul>
+        </nav>
+        <div id="breadcrumbs">
+            <a href= "index.html" accesskey="h"> Home </a>
+            <p>></p>
+            <a href= "#" accesskey="t"> Tutors</a>
+            
+            <h1 >Tutors</h1>
+        </div>
+    </header>
+    <main>
+        <div id="sort">
+            <label for="sortOrder">Sort Order:</label>
+            <select id="sortOrder" onchange="sortList()">
+              <option value="asc">A-Z</option>
+              <option value="desc">Z-A</option>
+            </select>
+          </div>
+
+        <div id="scrollMenu" >
+            <ul id="sortableList">
+
+            <li class="Abdullah Saeed">
+            <div class="box">
+                <img src="img/AbdullahSaeed.png" alt="Abdullah Saeed"> 
+                <dl>    
+                    <dt>Tutor name:</dt>
+                    <dd>Abdullah Saeed</dd>
+                    <dt>Area of teaching:</dt>
+                    <dd>
+                        <ol>
+                            <li>HTML5</li>
+                            <li>CSS </li>
+                        </ol>
+                    </dd>
+                </dl>
+            </div> </li>
+        
+        <li class="Ahmed Khalid">
+        <div class="box">
+            <img src="img/AhmedKhalid.png" alt="Ahmed Khalid"> 
+            <dl>    
+                 <dt>Tutor name:</dt>
+                 <dd>Ahmed Khalid</dd>
+                 <dt>Area of teaching:</dt>
+                 <dd>
+                     <ol>
+                         <li>Scratch 1</li>
+                         <li>Scratch 2</li>
+                     </ol>
+                 </dd>
+             </dl>
+        </div></li> 
+
+        <li class="Mohammed Ahmed">
+            <div class="box">
+                <img src="img/MohammedAhmed.png" alt="Mohammed Ahmed"> 
+                <dl> 
+                     <dt>Tutor name:</dt>
+                     <dd>Mohammed Ahmed</dd>
+                     <dt>Area of teaching:</dt>
+                     <dd>
+                         <ol>
+                             <li>Computer basics</li>
+                             <li>Excel</li>
+                         </ol>
+                    </dd>
+                </dl>
+            </div></li>
+        
+            <li class="Nawal Mohammed">
+            <div class="box">
+                <img src="img/NawalMohammed.png" alt="Nawal Mohammed"> 
+                <dl>    
+                    <dt>Tutor name:</dt>
+                    <dd>Nawal Mohammed</dd>
+                    <dt>Area of teaching:</dt>
+                    <dd>
+                        <ol>
+                             <li>Java</li>
+                             <li>python</li>
+                        </ol>
+                    </dd>
+                </dl>
+            </div></li>
+
+            <li class="Sara Ahmed">
+            <div class="box">
+                 <img src="img/SaraAhmed.png" alt="Sara Ahmed"> 
+                 <dl>     
+                     <dt>Tutor name:</dt>
+                         <dd>Sara Ahmed</dd>
+                         <dt>Area of teaching:</dt>
+                         <dd>
+                             <ol>
+                                 <li>HTML5</li>
+                                 <li>CSS</li>
+                             </ol>
+                         </dd>
+                 </dl>
+             </div> </li>
+             
+             <li class="Yasmine Nayef">
+                <div class="box">
+                    <img src="img/YasmineNayef.png" alt="Yasmine Nayef"> 
+                    <dl>    
+                         <dt>Tutor name:</dt>
+                         <dd>Yasmine Nayef</dd>
+                         <dt>Area of teaching:</dt>
+                         <dd>
+                             <ol>
+                                 <li>Java</li>
+                                 <li>Python</li>
+                             </ol>
+                         </dd>
+                    </dl>
+                </div></li>
+
+            </ul>
+        </div>       
+    </main>
+   
+    <footer class="section-p1">
+        <div class="col">
+            <h4>Contact</h4>
+            <p><i class="fa fa-envelope"></i><strong>  Email: </strong> codit@gmail.com</p>
+            <p><i class="fa fa-phone fa-flip-horizontal"></i><strong>Phone:</strong> +966 1234 532 </p>
+            </div>
+            <div class="col">
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <a href="https://twitter.com/?lang=en" target="_blank" ><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" ><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.pinterest.com/" target="_blank" ><i class="fab fa-pinterest-p"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank" ><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2023, CodeIt - All rights are reserved</p>
+        </div>
+    </footer>
+    <script>
+        function sortList() 
+        {
+        var sortOrder = document.getElementById('sortOrder').value;
+        var list = document.getElementById('sortableList');
+        var items = Array.from(list.children);
+
+
+
+        items.sort(function (a, b) {
+    var textA = a.getElementsByClassName('box')[0].getElementsByTagName('dd')[0].textContent.toUpperCase();
+    var textB = b.getElementsByClassName('box')[0].getElementsByTagName('dd')[0].textContent.toUpperCase();
+
+    if (sortOrder === 'asc') {
+      return textA.localeCompare(textB);
+    } else {
+      return textB.localeCompare(textA);
+    }
+  });
+
+        // Remove existing list items
+        while (list.firstChild) {
+            list.removeChild(list.firstChild);
+        }
+
+         // Append sorted items
+         items.forEach(function(item) {
+        list.appendChild(item);
+        });
+        }
+      </script>
+  
+</body>
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Courses Page</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" >
+    <link rel= "stylesheet" href="stylesheet.css">
+    <script src="apply.js"></script>
+    <style>
+        
+       
+        .courses-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            
+        }
+        .course-card {
+            
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            transition: box-shadow 0.3s ease;
+            margin-bottom: 30px; 
+            margin-top: 2%;
+            min-height: 350px;
+            position: relative;
+        }
+        .course-card:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        .course-description {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            position: absolute; 
+            bottom: 0; 
+            left: 0;
+            right: 0; 
+            max-height: 150px; 
+            overflow-y: auto; 
+        }
+        .course-card:hover  .course-description {
+    display: block;
+        }
+
+    
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        .theme2 .courses-container{
+            color:whitesmoke;
+                background-color: #24305E; 
+              }
+
+          .theme2 .course-card{
+            color:whitesmoke;
+                background-color: #4D6D9A; 
+              }
+              .theme2 .course-description{
+                color:whitesmoke;
+                background-color: #4D6D9A; 
+              }
+             
+            
+        
+    </style>
+</head>
+
+<body>
+    <header>    
+        <nav>
+            <ul >
+                <li><img src="img/logo.png" alt="logo" width=100vw height=98vw></li>
+            </ul>
+                <ul>
+                <li><a href="index.html" target="_self" accesskey="h">Home</a></li>
+                <li><a href="ParentDashboard.html" target="_self" accesskey="p" >Parent Dashboard</a></li>
+                <li><a href="adminDashboard.html" target="_self" accesskey="a">Administrator Dashboard</a></li>
+                <li><a href="Courses.html" target="_self" accesskey="c">Courses</a></li>
+                <li><a href="Tutors.html" target="_self" accesskey="t">Tutors</a></li>
+            </ul>
+        </nav>
+   
+
+
+        <div id="breadcrumbs">
+            
+            <a href= "index.html" target="_self" > Home </a>
+            <p>></p>
+            <a href= "Courses.html" target="_self"> Courses</a>
+            
+            <h1 >Courses</h1>
+        </div>
+</header>
+
+    <div class="courses-container">
+        <div class="course-card">
+            <img src="img/R.png" alt="Scratch logo" class="course-image" style="width: 50%;">
+            <h2>Scratch 1</h2>
+            <p>Rating: 4.5</p>
+            <div class="course-description">
+                <h3>Course Description</h3>
+                <p>Scratch Programming This module will introduce you to the basic concepts in the scratch programming language with how to use tempo, events and variables. We go through the use of coordinates, conditionals and how to draw with iteration. We will show you examples of iterative development, including how to use ask-and-answer blocks before diving into creating games</p>
+                <h3>Prerequisites</h3>
+                <p>None</p>
+                <h3>Time Slot</h3>
+                <p>Monday, 10:00 AM - 12:00 PM</p>
+                <h3>Current Tutor</h3>
+                <p>Ahmed Khalid</p>
+                <h3>Expected Objective</h3>
+                <ul>
+                    <li><p>Discuss the basic concepts of Scratch and define terms like sprite</p></li>
+                    <li><p>Describe the use of coordinates and conditionals in Scratch</p></li>
+                    <li><p>Describe how use iterative drawing in Scratch</p></li>
+                    <li><p>Summarise how to create games using the Scratch programming language</p></li>
+                    <li><p>Explain how to use tempo, events and variables in Scratch</p></li>
+                    <li><p>Explain how to update variables repeatedly</p></li>
+                    <li><p>Outline how to use ask-and-answer blocks</p></li>
+                    <li><p>Explain how to use Scratch to create animated images, stories and songs</p></li>
+        
+                
+                </ul>
+            </div>
+        </div>
+
+        <div class="course-card">
+            <img src="img/excel.png" alt="Excel image" class="course-image" style="width: 40%;">
+            <h2>Excel</h2>
+            <p>Rating: 4.2</p>
+            <div class="course-description">
+                <h3>Course Description</h3>
+                <p>Learn Excel from scratch and develop your skills in it to reach professionalism. This course is specifically for teaching Excel to beginners, as it shows them how to create electronic tables, use advanced names, develop business using equations, develop reports using matrix equations, use (If Statement) and information retrieval equations in business solutions, and presents advanced Excel tricks.</p>
+                <h3>Prerequisites</h3>
+                <p>Computer basics</p>
+                <h3>Time Slot</h3>
+                <p>Wednesday, 2:00 PM - 4:00 PM</p>
+                <h3>Current Tutor</h3>
+                <p>Mohammed Ahmed</p>
+                <h3>Expected Objective</h3>
+                <ul>
+                    <li><p>Learn Excel from scratch and how to build and develop reports</p></li>
+                    <li><p>Advantages of Excel over other computer programs</p></li>
+                    <li><p>Learn Excel for beginners and develop solutions using Text Functions</p></li>
+                    <li><p>Excel programming (VBA) in developing data analysis tools</p></li>
+                    <li><p>The concept of macros and how to call them in the programming language (VBA)</p></li>
+                    <li><p>Advanced Excel secrets and tricks in business development using Excel</p></li>
+                    <li><p>Advanced skills in Excel and how to use them in a practical way, such as functions and equations</p></li>
+                    <li><p>Employing If Statement and information retrieval equations in business solutions</p></li>
+                    <li><p>Analyze data in Excel to gain insights to support decision making using Add-Ins</p></li>
+        
+                
+                </ul>
+            </div>
+        </div>
+
+        <div class="course-card">
+            <img src="img/R.png" alt="Excel image" class="course-image" style="width: 50%;">
+            <h2>Scratch 2</h2>
+            <p>Rating: 4.8</p>
+            <div class="course-description">
+                <h3>Course Description</h3>
+                <p>This course is a continuation of developing your skills using Scratch</p>
+                <h3>Prerequisites</h3>
+                <p>Scratch 1</p>
+                <h3>Time Slot</h3>
+                <p>Tuesday, 9:00 AM - 11:00 AM</p>
+                <h3>Current Tutor</h3>
+                <p>Ahmed Khalid</p>
+                <h3>Expected Objective</h3>
+                <ul>
+                    <li><p>Identify common errors and issues in Scratch projects</p></li>
+                    <li><p>Apply strategies to debug and resolve issues.</p></li>
+                    <li><p>Describe the Scratch online community and its features.</p></li>
+                    <li><p>Create a portfolio of Scratch projects showcasing various learned skills.</p></li>
+                    <li><p>Implement clones to create multiple instances of a sprite.</p></li>
+                    <li><p>Make projects interactive using the mouse and keyboard input.</p></li>
+
+                
+                </ul>
+            </div>
+        </div>
+
+        <div class="course-card">
+            <img src="img/css1.png" alt="css logo" class="course-image" style="width: 50%; " >
+            <h2>CSS</h2>
+            <p>Rating: 4.0</p>
+            <div class="course-description">
+                <h3>Course Description</h3>
+                <p>Dive deep into the world of web design with this comprehensive course on Cascading Style Sheets (CSS), a cornerstone technology used to control the look and feel of websites. From understanding the basics to mastering advanced techniques, this course will empower students to design visually appealing and responsive web layouts. Tailored for both beginners and intermediate designers, our course offers a mix of theoretical concepts and hands-on projects, ensuring practical understanding and application.</p>
+                <h3>Prerequisites</h3>
+                <p>HTML5</p>
+                <h3>Time Slot</h3><p>Thursday, 1:00 PM - 3:00 PM</p>
+                <h3>Current Tutor</h3>
+                <p>Sara Ahmed</p>
+                <h3>Expected Objective</h3>
+                <ul>
+                    <li><p>Understand the role and importance of CSS in web design.</p></li>
+                    <li><p>Differentiate between inline, internal, and external styles.</p></li>
+                    <li><p>Set up and link a CSS stylesheet to an HTML document.</p></li>
+                    <li><p>Define and identify CSS selectors, properties, and values.</p></li>
+                    <li><p>Differentiate between class, ID, element, and complex selectors.</p></li>
+                    <li><p>Implement color using HEX, RGB, RGBA, and named colors.</p></li>
+                    <li><p>Style text with font-family, font-size, font-weight, and other typography-related properties.</p></li>
+                    <li><p>Understand the CSS box model, including margin, border, padding, and content.</p></li>
+                   
+
+                
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <div class="courses-container">
+        <div class="course-card">
+            <img src="img/Java_logo_icon.png" alt="java logo" class="course-image" style="width: 70%;">
+            <h2>Java</h2>
+            <p>Rating: 4.1</p>
+            <div class="course-description">
+                <h3>Course Description</h3>
+                <p>A course for beginners in programming in the Java language/JavaScript. This course deals with the basics of programming in the Java language for programmers who want to refresh their memory and for students who want to enrich their knowledge and develop their experiences. The course also addresses the types of programming languages and the features of the Java language and its difference from other modern programming languages. And learn. The concept of mathematical functions and their uses, and conditional functions and their operations.</p>
+                <h3>Prerequisites</h3>
+                <p>python</p>
+                <h3>Time Slot</h3>
+                <p>Friday, 10:00 AM - 12:00 PM</p>
+                <h3>Current Tutor</h3>
+                <p>Nawal Mohammed</p>
+                <h3>Expected Objective</h3>
+                <ul>
+                    <li><p>Introduction to modern programming languages</p></li>
+                    <li><p>Basics of programming in Java</p></li>
+                    <li><p>Areas of use of the Java language</p></li>
+                    <li><p>General syntax and features of the Java language</p></li>
+                    <li><p>Types of databases in computers</p></li>
+                    <li><p>Types of databases in computers</p></li>
+                    <li><p>Arithmetic operations, conditional statements, and the print statement</p></li>
+                
+                </ul>
+            </div>
+        </div>
+
+        <div class="course-card">
+            <img src="img/4846343.png" alt="python logo" class="course-image" style="width: 40%;">
+            <h2>python</h2>
+            <p>Rating: 4.3</p>
+            <div class="course-description">
+                <h3>Course Description</h3>
+                <p>Introduction to programming using the Python language in a mixed way between constructivist and receptive education, so that you can learn about programming using the Python language and practice it, as it will include a presentation of the theoretical material for each topic of the course, followed by the presentation of a mini programming project with the aim of consolidating theoretical concepts through application. Practical use of hacking in programming.</p>
+                <h3>Prerequisites</h3>
+                <p>Computer basics</p>
+                <h3>Time Slot</h3>
+                <p>Saturday, 9:00 AM - 11:00 AM</p>
+                <h3>Current Tutor</h3>
+                <p>Yasmine Nayef</p>
+                <h3>Expected Objective</h3>
+                <ul>
+                    <li><p>The concept of programming in general</p></li>
+                    <li><p>The importance of programming and its different languages</p></li>
+                    <li><p>Python language applications</li>
+                    <li><p>Python commands</li>
+                    <li><p>Basics and principles of Python programming for beginners</p></li>
+                    <li><p>Conditional statements in Python</p></li>
+                    <li><p>Structure of a program written in Python using condition and recursion</p></li>
+                    <li><p>How to write a program in Python</p></li>
+                    <li><p>Structure using functions and object-oriented programming</p></li>
+                
+                </ul>
+            </div>
+        </div>
+
+        <div class="course-card">
+            <img src="img/pc.png" alt="cpu image" class="course-image" style="width: 40%;">
+            <h2>Computer basics</h2>
+            <p>Rating: 4.6</p>
+            <div class="course-description">
+                <h3>Course Description</h3>
+                <p>This course deals with the most important information and principles related to computer basics and operating systems. It mentions the history, development, and future of computer types from the beginning of its appearance until the present day. It also addresses the clarification of the concept of the Internet, the types of available Internet networks, their working principle, and more.</p>
+                <h3>Prerequisites</h3>
+                <p>None</p>
+                <h3>Time Slot</h3>
+                <p>Sunday, 1:00 PM - 3:00 PM</p>
+                <h3>Current Tutor</h3>
+                <p>Mohammed Ahmed</p>
+                <h3>Expected Objective</h3>
+                <ul>
+                    <li><p>Understand basic concepts related to ICT, computers, equipment and software</p></li>
+                    <li><p>Learn about the healthy way to operate the computer and the options for shutting it down properly and safely</p></li>
+                    <li><p>Work effectively on a computer desktop using icons and windows</p></li>
+                    <li><p>Adjust basic operating system settings and use the Help/Tips feature</p></li>
+                    <li><p>Create a simple document and print the output</p></li>
+                    <li><p>Learn the key concepts of file management and organize files and folders efficiently</p></li>
+                    <li><p>Understand key storage concepts and use software to compress and extract large files</p></li>
+                    <li><p>Understand network concepts and connection options</p></li>
+                    <li><p>SUnderstand the importance of protecting data and devices from malware, and the importance of backing up data</p></li>
+                
+                </ul>
+            </div>
+        </div>
+
+        <div class="course-card">
+            <img src="img/html.png" alt="HTML5 logo" class="course-image" style="width: 35%;">
+            <h2>HTML5</h2>
+            <p>Rating: 3.9</p>
+            <div class="course-description">
+                <h3>Course Description</h3>
+                <p>In this course, you will learn all the new features and elements that have been added to HTML5, which help in creating websites and web applications in a simplified and effective way. Some of these elements are structural, making it easier to create and define the structure of web pages. These elements also facilitate the process of reading pages on search engines and knowing what parts of the actual page are. There are other elements to include audio and video files without the need for any browser add-ons or third-party software, in addition to new elements, attributes and input fields that help and facilitate the process of troubleshooting errors in the forms. HTML5 also provides a number of different working environments for drawing and animating graphics on web pages, in addition to many features that make it much easier for us compared to what we used to do previously.</p>
+                <h3>Prerequisites</h3>
+                <p>None</p>
+                <h3>Time Slot</h3>
+                <p>Monday, 3:00 PM - 5:00 PM</p>
+                <h3>Current Tutor</h3>
+                <p>Abdullah Saeed</p>
+                <h3>Expected Objective</h3>
+                <ul>
+                    <li><p>Learn the new HTML5 tags and how to use hidden metadata (Microdata).</p></li>
+                    <li><p>Use tags for audio and video.</p></li>
+                    <li><p>Draw and animate fun web graphics.</p></li>
+                    <li><p>Discover the latest HTML5 templates.</p></li>
+                    <li><p>Understand the importance of accessibility of web content.</p></li>
+                    <li><p>Using and experimenting with basic APIs such as web storage and geolocation.</p></li>
+                    <li><p>Practice programming methods using multiple interactive examples.</p></li>
+                
+                
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="courses-container">
+    <div class="course-card">
+        <img src="img/word.png" alt="word logo" class="course-image" style="width: 40%;" >
+        <h2>Word</h2>
+        <p>Rating: 4.8</p>
+        <div class="course-description">
+            <h3>Course Description</h3>
+            <p>Our "Word" course is specially designed for individuals who are new to Microsoft Word or word processing in general. This beginner-friendly course covers all the fundamental aspects of Microsoft Word, helping you become proficient in creating, formatting, and managing documents for personal use.</p>
+            <h3>Prerequisites</h3>
+            <p>Excel</p>
+            <h3>Time Slot</h3><p>Thursday, 2:00 PM - 3:00 PM</p>
+            <h3>Current Tutor</h3>
+            <p>Yasmine Nayef</p>
+            <h3>Expected Objective</h3>
+            <ul>
+                <li><p>Learners will gain the skills to create new documents and perform basic editing tasks, such as entering text, selecting, cutting, copying, and pasting.</p></li>
+                <li><p>Students will learn to format text and paragraphs effectively, including the use of fonts, styles, alignment, bullets, and numbering to enhance the appearance of their documents.</p></li>
+                <li><p>Learners will understand how to manage page orientation, margins, headers and footers, and other layout features to produce professional-looking documents.</p></li>
+                <li><p>Students will learn how to save, print, and share documents effectively, including understanding different file formats and their uses.</p></li>
+                <li><p>The course aims to develop basic problem-solving skills, enabling learners to troubleshoot common issues they may encounter while using Microsoft Word.</p></li>
+
+            </ul>
+        </div>
+    </div>
+   </div>
+    <footer class="section-p1">
+        <div class="col">
+            <h4>Contact</h4>
+            <p><i class="fa fa-envelope"></i><strong>  Email: </strong> codit@gmail.com</p>
+            <p><i class="fa fa-phone fa-flip-horizontal"></i><strong>Phone:</strong> +966 1234 532 </p>
+            </div>
+            <div class="col">
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <a href="https://twitter.com/?lang=en" target="_blank" ><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" ><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.pinterest.com/" target="_blank" ><i class="fab fa-pinterest-p"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank" ><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2023, CodeIt - All rights are reserved</p>
+        </div>
+    </footer>
+
+
+</body>
+</html>
