@@ -1,12 +1,10 @@
 # Welcome to CodeIt Project Repository!
-CodeIt is a web-based platform designed to help parents teach their children programming skills through interactive and educational activities.
+CodeIt is a web-based platform designed to help parents teach their children programming skills.
 
 ## Features:
 
 **User-Friendly Interface:** Designed with CSS, HTML, and JavaScript for intuitive navigation.
-
-**Live Hosting:** Visit our hosted version to experience SpaceCode firsthand!
-
+**Live Hosting:** Visit our hosted version .
 ## Getting Started:
 To explore CodeIt:
 
