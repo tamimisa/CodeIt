@@ -3,7 +3,7 @@ CodeIt is a web-based platform designed to help parents teach their children pro
 
 ## Features:
 
-**User-Friendly Interface:** Designed with CSS, HTML, and JavaScript for intuitive navigation.
+**User-Friendly Interface:** Designed with CSS, HTML, and JavaScript for intuitive navigation. <br/>
 **Live Hosting:** Visit our hosted version .
 ## Getting Started:
 To explore CodeIt:
